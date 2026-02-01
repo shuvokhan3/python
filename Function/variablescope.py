@@ -8,12 +8,7 @@ def calculation():
     b = 9
     return a+b+x
 
+
+
 #call the function
 print(calculation())
-
-
-
-
-
-
-
