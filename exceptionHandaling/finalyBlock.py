@@ -3,6 +3,5 @@ try:
     print(result)
 except ZeroDivisionError:
     print(ZeroDivisionError)
-    
 finally:
     print("finally")
