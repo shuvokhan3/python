@@ -1,21 +1,40 @@
-#single inharitance
+#Multiple inharitance
+
 class Message:
+
+    totalMessage = 34
+
     def __init__(self, name, message):
         self.name = name
         self.message = message
 
-    def personMessage(self ):
+    def personMessage(self):
         print(self.name, self.message)
 
-class CommentMessage(Message):
+    def TotalNumberOfMessages(self):
+        print("Total Message is : ", self.totalMessage)
+
+class PictureMessage:
+    def __init__(self, name, message):
+        self.name = name
+        self.message = message
+
+    def PictureMessage(self):
+        print(self.name, self.message)
+
+
+
+class CommentMessage(Message, PictureMessage):
     pass
 
 
 #parent class obj
-firstMess = Message("firstMess", "first message")
-firstMess.personMessage()
+# firstMess = Message("firstMess", "first message",)
+# firstMess.personMessage()
 
 #child class obj
 firstCommentMessage = CommentMessage("firstCommentMessage", "first comment")
-firstCommentMessage.personMessage()
+firstCommentMessage.TotalNumberOfMessages()
+
+firstCommentMessage.PictureMessage()
 
