@@ -28,10 +28,6 @@ class CommentMessage(Message, PictureMessage):
     pass
 
 
-#parent class obj
-# firstMess = Message("firstMess", "first message",)
-# firstMess.personMessage()
-
 #child class obj
 firstCommentMessage = CommentMessage("firstCommentMessage", "first comment")
 firstCommentMessage.TotalNumberOfMessages()
