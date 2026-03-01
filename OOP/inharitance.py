@@ -28,6 +28,9 @@ class CommentMessage(Message, PictureMessage):
     pass
 
 
+
+
+
 #child class obj
 firstCommentMessage = CommentMessage("firstCommentMessage", "first comment")
 firstCommentMessage.TotalNumberOfMessages()
