@@ -13,9 +13,9 @@ class Father:
 
 
 class Son(Father):
-    pass
+    def __init__(self):
+        print("Son's constructor")
 
-#create two object for class
-#here i show that son also access the father constructor
+
 obj = Father()
 obj2 = Son()
