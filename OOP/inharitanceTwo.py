@@ -14,8 +14,10 @@ class Father:
 
 class Son(Father):
     def __init__(self):
+        #call the parent constructor
+        super().__init__()
         print("Son's constructor")
 
 
-obj = Father()
+
 obj2 = Son()
