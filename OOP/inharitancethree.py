@@ -7,8 +7,6 @@ class Father:
     def add():
         print(Father.x + Father.y)
 
-
-        
 class Son(Father):
     pass
 
