@@ -7,8 +7,18 @@ class Father:
     def add():
         print(Father.x + Father.y)
 
+    @staticmethod
+    def mess():
+        print("This is a message from Father class")
+
 class Son(Father):
     pass
 
 
 Son.add()
+
+
+
+
+
+
