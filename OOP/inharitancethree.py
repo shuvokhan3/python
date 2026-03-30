@@ -1,6 +1,6 @@
 class Message:
     x = 9
-    y = 9
+    y = 999
 
 
     def sum(self):
@@ -11,18 +11,24 @@ class Message:
         print('first value is : ',Message.x)
 
 class commentMessage(Message):
-    pass
+
+    def addTwo(self):
+        print('Number is : ',self.x, self.y,self.sum())
 
 
-# firstMessage = Message()
-# firstCommentMessage = commentMessage()
-#
-# print(firstMessage.sum())
-# print(firstCommentMessage.sum())
+firstMessage = Message()
+firstCommentMessage = commentMessage()
+
+print(firstMessage.sum())
+print(firstCommentMessage.sum())
+
+firstCommentMessage.addTwo()
 
 #direct access for static method
 Message.value()
 commentMessage.value()
+
+
 
 
 
