@@ -1,23 +1,30 @@
-class Father:
-    x = 34
-    y = 54
+class Message:
+    x = 9
+    y = 9
 
-    #without creating any object this class able to access this method
+
+    def sum(self):
+        return self.x + self.y
+
     @staticmethod
-    def add():
-        print(Father.x + Father.y)
+    def value():
+        print('first value is : ',Message.x)
 
-    @staticmethod
-    def mess():
-        print("This is a message from Father class")
-
-        
-
-class Son(Father):
+class commentMessage(Message):
     pass
 
 
-Son.add()
+# firstMessage = Message()
+# firstCommentMessage = commentMessage()
+#
+# print(firstMessage.sum())
+# print(firstCommentMessage.sum())
+
+#direct access for static method
+Message.value()
+commentMessage.value()
+
+
 
 
 
