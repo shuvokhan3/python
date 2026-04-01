@@ -16,6 +16,8 @@ class ClassOne(Student):
 name = Student("John", 22)
 name.address()
 
+
+
 #create  obj for child class
 anotherName = Student("shuvo", 25)
 anotherName.address()
