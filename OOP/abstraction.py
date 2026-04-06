@@ -23,5 +23,7 @@ class Student2(Student):
 
 val = Student2()
 val.address()
+
+
 val.name()
 val.score()
