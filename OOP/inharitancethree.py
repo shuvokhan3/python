@@ -14,10 +14,13 @@ class commentMessage(Message):
 
 
 firstMessage = Message()
+
 firstCommentMessage = commentMessage()
 print(firstMessage.sum())
 print(firstCommentMessage.sum())
 firstCommentMessage.addTwo()
+
+
 #direct access for static method
 Message.value()
 commentMessage.value()
