@@ -20,9 +20,6 @@ class bike:
 
     def Display(self):
         print(self.__brand)
-
-    
-
     
 #public access modifier
 obj = car()
