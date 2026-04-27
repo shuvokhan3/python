@@ -25,6 +25,8 @@ class bike:
 obj = car()
 obj.Display()
 
+
+
 #protected access modifier
 obj1 = bike()
 obj1.Display()
