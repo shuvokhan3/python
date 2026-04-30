@@ -17,6 +17,8 @@ class Message:
         self.__firstComment = comment
     
 
+
+
 message = Message("Hello, World!")
 print(message.get_text())  # Output: Hello, World!
 message.set_text("Hello, Python!")
