@@ -18,6 +18,9 @@ class BankAccount:
     def get_balance(self):
         return self.__balance   
     
+
+
+    
 obj = BankAccount("123456789", 1000)
 obj.deposit(500)  # Deposited: 500. New balance: 1500
 obj.withdraw(200)  # Withdrew: 200. New balance: 130
