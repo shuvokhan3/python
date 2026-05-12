@@ -9,18 +9,25 @@ class BankAccount:
             print(f"Deposited: {amount}. New balance: {self.__balance}")
         else:
             print("Deposit amount must be positive.")
+
     def withdraw(self, amount):
-        if amount > 0 and amount <= self.__balance:
+        if 0 < amount <= self.__balance:
             self.__balance -= amount
             print(f"Withdrew: {amount}. New balance: {self.__balance}")
         else:
             print("Withdrawal amount must be positive and less than or equal to the balance.")
+
     def get_balance(self):
-        return self.__balance  
+        return self.__balance
+
+    def get_account_number(self):
+        return self.__account_number
     
-obj = BankAccount("123456789", 1000)
-obj.deposit(500)  # Deposited: 500. New balance: 1500
-obj.withdraw(200)  # Withdrew: 200. New balance: 130
-print(obj.get_balance())  # 1300
-# Attempting to access private attributes directly will result in an error
-# print(obj.__balance)  # This will raise an AttributeError
+
+# Example usage
+account = BankAccount("123456789", 1000)        
+account.deposit(500)  # Deposited: 500. New balance: 1500
+account.withdraw(200)  # Withdrew: 200. New balance: 130
+print(f"Account Number: {account.get_account_number()}")  # Account Number: 123456789
+print(f"Current Balance: {account.get_balance()}")  # Current Balance: 130
+
