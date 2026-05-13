@@ -22,7 +22,6 @@ class BankAccount:
 
     def get_account_number(self):
         return self.__account_number
-    
 
 # Example usage
 account = BankAccount("123456789", 1000)        
