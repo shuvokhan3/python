@@ -3,6 +3,8 @@ class BankAccount:
         self.__account_number = account_number  # Private attribute
         self.__balance = balance  # Private attribute
 
+
+
     def deposit(self, amount):
         if amount > 0:
             self.__balance += amount
