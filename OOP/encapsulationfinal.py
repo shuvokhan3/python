@@ -12,6 +12,8 @@ class BankAccount:
         else:
             print("Deposit amount must be positive.")
 
+            
+
     def withdraw(self, amount):
         if 0 < amount <= self.__balance:
             self.__balance -= amount
