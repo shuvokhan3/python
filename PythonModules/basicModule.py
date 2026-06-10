@@ -20,3 +20,8 @@ print(random.randint(1, 10))  # random integer between 1 and 10
 import os
 print(os.getcwd())  # get current working directory
 print(os.listdir())  # list files in current directory  
+
+import datetime
+# datetime module : provide classes for manipulating dates and times
+now = datetime.datetime.now()
+
