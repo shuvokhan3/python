@@ -7,4 +7,6 @@ conn.request("GET", "/todo")
 
 response = conn.getresponse()
 print(response.status, response.reason)
+print(response.read().decode())
+
 

@@ -25,3 +25,14 @@ import datetime
 # datetime module : provide classes for manipulating dates and times
 now = datetime.datetime.now()
 
+#json module
+import json
+# json module : provide functions for working with JSON data
+data = {"name": "Alice",
+         "age": 30,
+         "city": "Dhaka"
+   }
+
+json_data = json.dumps(data) # convert Python object to JSON string
+print(json_data)
+
