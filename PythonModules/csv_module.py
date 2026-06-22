@@ -11,3 +11,6 @@ with open('data.csv', mode='r') as file:
     for row in reader:
     
         print(row) 
+
+
+        
