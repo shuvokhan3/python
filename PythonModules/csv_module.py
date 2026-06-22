@@ -13,4 +13,7 @@ with open('data.csv', mode='r') as file:
         print(row) 
 
 
-        
+        g
+
+
+
